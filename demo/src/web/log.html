@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auction-Log</title>
+    <script>
+        function toSign() {
+            window.location.assign("/web/sign.html");
+        }
+    </script>
+</head>
+
+
+<body>
+<form method="get" action="/src/log">
+    user ID<input type="text" name="id">
+    <br/>
+    password<input type="text" name="password">
+    <button type="submit">GO</button>
+    <button type="reset">RESET</button>
+    <button onclick="toSign()">sign</button>
+</form>
+</body>
+</html>
